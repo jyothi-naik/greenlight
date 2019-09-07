@@ -2,7 +2,7 @@ import os
 import requests
 from bs4 import BeautifulSoup
 
-payload = {'j_username': os.environ.get('user'), 'j_password': os.environ.get('pass')}
+payload = {'j_username': $user, 'j_password': $pass }
 
 
 session = requests.Session()
