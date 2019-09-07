@@ -1,1 +1,9 @@
 
+withCredentials([[
+  $class: 'UsernamePasswordMultiBinding',
+  credentialsId: 'greenlight',
+  usernameVariable: 'user',
+  passwordVariable: 'pass',
+]]) {
+  sh("./GreenLight.py --user ${user} --password ${pass}")
+}
